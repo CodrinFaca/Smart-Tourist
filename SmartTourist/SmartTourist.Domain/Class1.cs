@@ -11,5 +11,7 @@ namespace SmartTourist.Domain
         public int MyProperty { get; set; }
 
         public String helloProp { get; set; }
+
+        public String oanaProp { get; set; }
     }
 }
