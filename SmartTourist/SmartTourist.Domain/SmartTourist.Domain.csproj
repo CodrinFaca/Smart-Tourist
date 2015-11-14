@@ -42,6 +42,8 @@
     <Compile Include="Class1.cs" />
     <Compile Include="Journey.cs" />
     <Compile Include="JourneyStatus.cs" />
+    <Compile Include="Localization\LocalizationKeys.cs" />
+    <Compile Include="Localization\LocalizationStrings.cs" />
     <Compile Include="Location.cs" />
     <Compile Include="PointOfInterest.cs" />
     <Compile Include="Enums\PointOfInterestStatus.cs" />
@@ -50,6 +52,9 @@
     <Compile Include="Enums\SocialApp.cs" />
     <Compile Include="SocialPage.cs" />
     <Compile Include="User.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
