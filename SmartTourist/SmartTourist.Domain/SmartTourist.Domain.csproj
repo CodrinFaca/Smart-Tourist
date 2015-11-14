@@ -40,7 +40,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="Journey.cs" />
+    <Compile Include="JourneyStatus.cs" />
+    <Compile Include="Location.cs" />
+    <Compile Include="PointOfInterest.cs" />
+    <Compile Include="Enums\PointOfInterestStatus.cs" />
+    <Compile Include="Preferences.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Enums\SocialApp.cs" />
+    <Compile Include="SocialPage.cs" />
+    <Compile Include="User.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
