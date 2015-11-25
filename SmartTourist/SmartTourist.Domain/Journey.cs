@@ -9,6 +9,9 @@ namespace SmartTourist.Domain
     public class Journey
     {
         public int JourneyId { get; set; }
+        public Location Start { get; set; }
+        public Location End { get; set; }
+        public Preferences JourneyPreferences { get; set; }
         public PointOfInterest[] PointsToVisit { get; set; }
         public JourneyStatus[] Status { get; set; }
         //fiecare element din PointsToVisit va avea un element in Status

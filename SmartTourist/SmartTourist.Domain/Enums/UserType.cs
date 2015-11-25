@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace SmartTourist.Domain
 {
-    public class Preferences
+    public enum UserType
     {
-        //To be added
-        public UserType UserType { get; set; }
-        public List<TourismType> TourismType { get; set; }
+        //TODO: add user types (journey lenght/speed)    
     }
 }

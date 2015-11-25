@@ -40,6 +40,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="Enums\TourismType.cs" />
+    <Compile Include="Enums\UserType.cs" />
     <Compile Include="Journey.cs" />
     <Compile Include="JourneyStatus.cs" />
     <Compile Include="Localization\LocalizationKeys.cs" />
