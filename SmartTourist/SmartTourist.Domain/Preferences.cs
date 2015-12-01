@@ -8,7 +8,6 @@ namespace SmartTourist.Domain
 {
     public class Preferences
     {
-        //To be added
         public UserType UserType { get; set; }
         public List<TourismType> TourismType { get; set; }
     }

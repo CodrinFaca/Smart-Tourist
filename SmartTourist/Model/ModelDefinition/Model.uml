@@ -1,0 +1,1212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="b61377cd-a07d-4eec-b4cc-8f69873688d8"
+  name="Model" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <actor
+        Id="a185a2d0-e163-429d-bd8a-35607f8e8dca"
+        name="Guest"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="7ce53276-cf72-48a3-9beb-f5819dab30ce"
+            isDerived="false"
+            sourceEndRoleName="Guest"
+            targetEndRoleName="Login"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="c2a2c0ce-04d2-4853-ba63-f2d4e2ec2bea"
+              LastKnownName="Login"
+              LastKnownLocation="Model.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="87fa62cb-a036-4bfe-ab65-54ac019a8c9d"
+                  name="Guest"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="cfcaa332-e682-4d9a-a0c1-8d4f5e69d44c"
+                  name="Login"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="4083804c-224c-46a0-829b-ab991e8e2c2e"
+        name="Subsystem1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="c2a2c0ce-04d2-4853-ba63-f2d4e2ec2bea"
+        name="Login"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="f0e13cab-f892-4fe9-a033-20d56eacb8f0">
+            <useCaseMoniker
+              Id="9d614480-f79d-4cd4-ba0e-b01ed4314270"
+              LastKnownName="Start new trip"
+              LastKnownLocation="Model.uml" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="1d549856-3550-41cf-9bc1-f4a66ffc82c9"
+        name="Logged in User"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="4b50701f-b4a5-4f07-80c5-92e86023adb8"
+            isDerived="false"
+            sourceEndRoleName="Logged in User"
+            targetEndRoleName="Start new trip"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="9d614480-f79d-4cd4-ba0e-b01ed4314270"
+              LastKnownName="Start new trip"
+              LastKnownLocation="Model.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e7179704-ba9e-4134-ae98-13cf939e1b89"
+                  name="Logged in User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b58accd1-80b6-4129-8f22-217972e9215a"
+                  name="Start new trip"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="449ee8f2-9eb6-4edc-9dc2-38a69d86fa34"
+            isDerived="false"
+            sourceEndRoleName="Logged in User"
+            targetEndRoleName="Continue trip"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="1d5c9e99-4f85-4ea3-8415-11ff539733c8"
+              LastKnownName="Continue trip"
+              LastKnownLocation="Model.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c7a9bf96-d8af-46a1-bf47-ae35aac868fc"
+                  name="Logged in User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e0d8dea3-7474-4307-ae64-f43efd009d13"
+                  name="Continue trip"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="cccb9c1e-b8de-4870-9778-03793c06e44d"
+            isDerived="false"
+            sourceEndRoleName="Logged in User"
+            targetEndRoleName="Logout"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="1c10aeb4-964b-451d-9dd1-2d5e8606c136"
+              LastKnownName="Logout"
+              LastKnownLocation="Model.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="843644c1-65fd-4809-ad48-0f7013665da5"
+                  name="Logged in User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f0cda80c-7d3f-4f63-a1f5-826eb73ee1cd"
+                  name="Logout"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="9d614480-f79d-4cd4-ba0e-b01ed4314270"
+        name="Start new trip"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="20f76657-b2ed-422c-b009-0a713d21c90b">
+            <useCaseMoniker
+              Id="080de33f-e62d-4cb9-bb29-670efbad5497"
+              LastKnownName="Choose trip type"
+              LastKnownLocation="Model.uml" />
+          </include>
+          <include
+            Id="d422f07a-57c4-472d-8f3f-5365e82644c4">
+            <useCaseMoniker
+              Id="cb2623d2-6c5e-4923-864d-102fde7a02ce"
+              LastKnownName="Configure route (choose start point and destination)"
+              LastKnownLocation="Model.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="1d5c9e99-4f85-4ea3-8415-11ff539733c8"
+        name="Continue trip"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="09eb7059-a051-4cba-a870-362fb5d9c923">
+            <useCaseMoniker
+              Id="392651be-470c-43d1-9764-cbdac5a5e11e"
+              LastKnownName="Reconfigure route (add or delete points)"
+              LastKnownLocation="Model.uml" />
+          </extend>
+          <extend
+            Id="a143821f-7cc1-4076-a985-586173e9f441">
+            <useCaseMoniker
+              Id="b83afd69-c02c-473b-8436-4d9e010a0e8d"
+              LastKnownName="Post to social media"
+              LastKnownLocation="Model.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="c3f19227-18e0-4a7e-98db-35e2782c1c16"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="080de33f-e62d-4cb9-bb29-670efbad5497"
+        name="Choose trip type"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="cb2623d2-6c5e-4923-864d-102fde7a02ce"
+        name="Configure route (choose start point and destination)"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="8818d773-905f-4a97-b3e6-92aaa5f1ad06">
+            <useCaseMoniker
+              Id="392651be-470c-43d1-9764-cbdac5a5e11e"
+              LastKnownName="Reconfigure route (add or delete points)"
+              LastKnownLocation="Model.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="392651be-470c-43d1-9764-cbdac5a5e11e"
+        name="Reconfigure route (add or delete points)"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="1c10aeb4-964b-451d-9dd1-2d5e8606c136"
+        name="Logout"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="b83afd69-c02c-473b-8436-4d9e010a0e8d"
+        name="Post to social media"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="67a42b0d-8a20-4a47-9a31-9c1840f14390"
+        name="User"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="1d62a585-4e3b-4cc7-91b3-5abb169cfbdb"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="Journey"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="fc149af5-7fcf-46af-b999-4e76b8606881"
+              LastKnownName="Journey"
+              LastKnownLocation="Model.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="cde3493b-32ce-4c7f-ae45-239868b765de"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2b5b14b2-0d3b-472d-b948-2d0390450ddb"
+                  name="Journey"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="5e77f860-0b77-41e3-80df-06bb1a544511"
+                      name="Lower"
+                      value="n" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="575f9836-0105-4138-8c1d-63d4da28cc7a"
+                      name="Upper"
+                      value="n" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="cfb6b20a-1880-41b4-9aa2-8632941b5824"
+            name="CurrentJourney"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="7c64bc17-a107-47c0-94a6-0ca7fe41a563"
+            name="PastJourneys"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="7998cdcf-d8e1-4ef6-9dff-9e78254c935c"
+            name="LastKnownLocation"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="d09b20de-3a35-4826-a71d-19e87e661523"
+            name="LanguageCode"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="fc149af5-7fcf-46af-b999-4e76b8606881"
+        name="Journey"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="fb70b9ff-3408-4dce-a170-f3c5a8800591"
+            isDerived="false"
+            sourceEndRoleName="Journey"
+            targetEndRoleName="PointOfInterest"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="73433a13-ac47-4bd2-9844-dd65c9b084d6"
+              LastKnownName="PointOfInterest"
+              LastKnownLocation="Model.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1e34f37f-8a2a-46a6-82d1-2b2346d56269"
+                  name="Journey"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d32e9fbd-8f7f-475c-be70-be4bb01d0876"
+                  name="PointOfInterest"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="a3ac608d-6e6b-4eb5-bd83-a20f3988040e"
+                      name="Lower"
+                      value="n" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="4d7f47c6-222d-43a0-b33e-0a583b633cde"
+                      name="Upper"
+                      value="n" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="d44e6b4c-63ad-4097-850d-e712926f6f58"
+            isDerived="false"
+            sourceEndRoleName="Journey"
+            targetEndRoleName="JourneyStatus"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="e936a657-4971-43f7-9786-714db91128d2"
+              LastKnownName="JourneyStatus"
+              LastKnownLocation="Model.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="31b2209b-73de-4152-920a-c672370c858f"
+                  name="Journey"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b44dc9d2-5a3e-4da5-b22f-db981db5d904"
+                  name="JourneyStatus"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="4841e334-f85b-4101-80d0-2354060df0f1"
+                      name="Lower"
+                      value="n" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="48c7547b-0606-4cb9-a7d0-5951bc6ea3f4"
+                      name="Upper"
+                      value="n" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="cfc2a1a9-bada-4129-8533-318cbf4656cf"
+            isDerived="false"
+            sourceEndRoleName="Journey"
+            targetEndRoleName="Preferences"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="eecd294c-fb0b-4a49-bb32-4a72ab038ff5"
+              LastKnownName="Preferences"
+              LastKnownLocation="Model.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b298a566-40be-49c2-a6c3-f2a2d27e761a"
+                  name="Journey"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="22bc7817-73f6-42bf-a1d9-19e944321808"
+                  name="Preferences"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="3faf79da-fc72-4243-b6dc-f4cc84e89ce4"
+            name="JourneyId"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="29c3f1b9-5875-417e-8a7f-f31d05c405dc"
+            name="Start"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="d1937877-e1b1-4422-bc19-b1616413320c"
+            name="End"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="9cced31f-4bbe-497f-915d-944065ec56a9"
+            name="JourneyPreferences"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="b235d398-a0a1-43a2-9e1a-5d6ab8b82b7a"
+            name="PointsToVisit"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="bb89e2f2-7ea1-430d-b2f0-9dae8a7c7bdb"
+            name="Status"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="73433a13-ac47-4bd2-9844-dd65c9b084d6"
+        name="PointOfInterest"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="71c5f7b8-9648-4c0b-bddd-91d078737187"
+            isDerived="false"
+            sourceEndRoleName="PointOfInterest"
+            targetEndRoleName="SocialPage"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="b56273b9-9d1c-47c2-bbd9-e537e25ff6c4"
+              LastKnownName="SocialPage"
+              LastKnownLocation="Model.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f1ad7bcf-291b-4f39-91ac-e88cf87cbb37"
+                  name="PointOfInterest"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2adee4a9-e7c7-49ee-8b86-328d56a1a914"
+                  name="SocialPage"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="c1788765-5f79-4ea8-9452-871a46df6805"
+                      name="Lower"
+                      value="n" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="2114f9a9-68ac-4dba-a981-bc0823a9758a"
+                      name="Upper"
+                      value="n" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="e319625e-3f05-4dd4-a5ee-2220a2d68786"
+            name="Name"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="4feee394-f9b8-4231-b7fc-4c03f709f180"
+            name="Website"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="e0a853aa-5e06-4b3b-9465-c77637ec9357"
+            name="Details"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="63bd90bc-6864-4162-a69f-53d1f03f6682"
+            name="SocialPages"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="e936a657-4971-43f7-9786-714db91128d2"
+        name="JourneyStatus"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="41ec43d7-d2c5-4d91-8a90-8d92c7e90622"
+            isDerived="false"
+            sourceEndRoleName="JourneyStatus"
+            targetEndRoleName="PointOfInterest"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="73433a13-ac47-4bd2-9844-dd65c9b084d6"
+              LastKnownName="PointOfInterest"
+              LastKnownLocation="Model.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1dc4e484-db6e-49bc-987d-d153aed14247"
+                  name="JourneyStatus"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9692dd02-8b76-41f1-8270-da71773b4985"
+                  name="PointOfInterest"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="43519e0e-c5a2-45e0-a5c0-d7cc09ad1733"
+            isDerived="false"
+            sourceEndRoleName="JourneyStatus"
+            targetEndRoleName="PointOfInterestStatus"
+            isLeaf="false"
+            isAbstract="false">
+            <enumerationMoniker
+              Id="cd0b0029-58a5-4e46-ae99-2d68a2ac1c0a"
+              LastKnownName="PointOfInterestStatus"
+              LastKnownLocation="Model.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9b0df726-4df1-4578-8637-fb38ebf3938f"
+                  name="JourneyStatus"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="58fb6fe9-110a-42f9-8f06-265ef33b6446"
+                  name="PointOfInterestStatus"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="c8dadb3c-282e-44bc-8491-be7a138632be"
+            name="PointToVisit"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="698aee45-a087-4781-8b1f-f5dc4f575b53"
+            name="Status"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="a6736366-a560-4f28-ba04-e948a8ebddb4"
+        name="Location"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="2f445772-f054-452a-8f56-f2400e8f6918"
+            isDerived="false"
+            sourceEndRoleName="Location"
+            targetEndRoleName="PointOfInterest"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="73433a13-ac47-4bd2-9844-dd65c9b084d6"
+              LastKnownName="PointOfInterest"
+              LastKnownLocation="Model.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f0717d5a-faa1-480c-a045-f7b355afc589"
+                  name="Location"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3491e3cb-7844-406a-ad72-a5594f472761"
+                  name="PointOfInterest"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="eecd294c-fb0b-4a49-bb32-4a72ab038ff5"
+        name="Preferences"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="0862bd41-ddf9-40b4-a64e-65ce936da2f5"
+            isDerived="false"
+            sourceEndRoleName="Preferences"
+            targetEndRoleName="UserType"
+            isLeaf="false"
+            isAbstract="false">
+            <enumerationMoniker
+              Id="09c5f57c-2a03-4156-bb9a-86755135e302"
+              LastKnownName="UserType"
+              LastKnownLocation="Model.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="905b2dac-292f-401e-9f98-e66126894ed5"
+                  name="Preferences"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="75969af4-413c-4a94-9cbd-2f5f96738809"
+                  name="UserType"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="d24131d2-7cf5-4327-9c6a-f6c22cfe0f58"
+            isDerived="false"
+            sourceEndRoleName="Preferences"
+            targetEndRoleName="TourismType"
+            isLeaf="false"
+            isAbstract="false">
+            <enumerationMoniker
+              Id="dcf3944a-2e8f-4140-85f4-7f67feab2213"
+              LastKnownName="TourismType"
+              LastKnownLocation="Model.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="600937f8-01bd-4d5c-9f4c-4a143d0c29ed"
+                  name="Preferences"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="caf8cd91-dbb2-4d2b-a504-e3e40d243e0a"
+                  name="TourismType"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="f85e6137-80fe-449c-8985-99094f7f9ff8"
+                      name="Lower"
+                      value="n" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="18ebca69-3010-4145-aec5-4912486b39f8"
+                      name="Upper"
+                      value="n" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="2adda806-ea1c-4066-99ab-c0fb29ee42b0"
+            name="UserType"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="01be4ee5-64bc-49de-9f5e-749babd02575"
+            name="TourismType"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="b56273b9-9d1c-47c2-bbd9-e537e25ff6c4"
+        name="SocialPage"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="07d788cc-0486-49bf-bc9c-cc1db89553e4"
+            isDerived="false"
+            sourceEndRoleName="SocialPage"
+            targetEndRoleName="PointOfInterest"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="73433a13-ac47-4bd2-9844-dd65c9b084d6"
+              LastKnownName="PointOfInterest"
+              LastKnownLocation="Model.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c99906bf-aaab-4658-a6ad-f79449d60e4e"
+                  name="SocialPage"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="eef5c505-3697-442c-a80f-519feea94eeb"
+                  name="PointOfInterest"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="467af902-77ea-4699-aeb7-5f2df3e11f2a"
+            isDerived="false"
+            sourceEndRoleName="SocialPage"
+            targetEndRoleName="SocialApp"
+            isLeaf="false"
+            isAbstract="false">
+            <enumerationMoniker
+              Id="34701fd6-1427-4ead-bda2-d3fc01167259"
+              LastKnownName="SocialApp"
+              LastKnownLocation="Model.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="efb210d0-a949-4464-a7d4-2d3ae5875a99"
+                  name="SocialPage"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6d448997-ecd3-455d-9c5a-1de53bb2b5e5"
+                  name="SocialApp"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="1e902190-b6c3-4dbb-8477-45256be3addc"
+            name="PointOfInterest"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="cd0d8082-7a1e-43bb-b5b9-06eceaa032b1"
+            name="SocialApp"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <enumeration
+        Id="34701fd6-1427-4ead-bda2-d3fc01167259"
+        name="SocialApp"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <enumeration
+        Id="cd0b0029-58a5-4e46-ae99-2d68a2ac1c0a"
+        name="PointOfInterestStatus"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <enumeration
+        Id="09c5f57c-2a03-4156-bb9a-86755135e302"
+        name="UserType"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <enumeration
+        Id="dcf3944a-2e8f-4140-85f4-7f67feab2213"
+        name="TourismType"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>

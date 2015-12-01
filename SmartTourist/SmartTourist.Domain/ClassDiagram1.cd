@@ -1,70 +1,63 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="SmartTourist.Domain.Class1" Collapsed="true">
-    <Position X="0.5" Y="0.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAICAAAAEAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Class1.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="SmartTourist.Domain.Journey" Collapsed="true">
+  <Class Name="SmartTourist.Domain.Journey">
     <Position X="2.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>EAAAAAAEAAAAAAAAIAAAAAAAAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <HashCode>EAIAAAAEQCAAAAAAIAAAAAAAAAAAAAAAAAAAAEAAAAA=</HashCode>
       <FileName>Journey.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="SmartTourist.Domain.JourneyStatus" Collapsed="true">
+  <Class Name="SmartTourist.Domain.JourneyStatus">
     <Position X="4" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAE=</HashCode>
       <FileName>JourneyStatus.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="SmartTourist.Domain.Location" Collapsed="true">
-    <Position X="0.5" Y="1.5" Width="1.5" />
+  <Class Name="SmartTourist.Domain.Location">
+    <Position X="0.5" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAIAAAAAAAAAAAAAAAAAAAAQAAAAIACAAAAAABAAAA=</HashCode>
       <FileName>Location.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="SmartTourist.Domain.PointOfInterest" Collapsed="true">
-    <Position X="2.25" Y="1.5" Width="1.5" />
+  <Class Name="SmartTourist.Domain.PointOfInterest">
+    <Position X="5.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAgAAAAACABgAAgBAAAAAQAAAAAAAAAAAAAAAAAAAI=</HashCode>
       <FileName>PointOfInterest.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="SmartTourist.Domain.Preferences" Collapsed="true">
-    <Position X="4" Y="1.5" Width="1.5" />
+  <Class Name="SmartTourist.Domain.Preferences">
+    <Position X="2.25" Y="3.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAEAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAA=</HashCode>
       <FileName>Preferences.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="SmartTourist.Domain.SocialPage" Collapsed="true">
-    <Position X="0.5" Y="2.5" Width="1.5" />
+  <Class Name="SmartTourist.Domain.SocialPage">
+    <Position X="4" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAACgAAI=</HashCode>
       <FileName>SocialPage.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="SmartTourist.Domain.User" Collapsed="true">
-    <Position X="4.25" Y="2.5" Width="1.75" />
+  <Class Name="SmartTourist.Domain.User">
+    <Position X="0.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAACAQAAAEAAAAAAAAAAAAAAAAAAAAAQAAAAEAAA=</HashCode>
+      <HashCode>AAAAAACAAAAAEAAAAAAAAAAAAAAAAAAAAAQAAAAEAAA=</HashCode>
       <FileName>User.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Enum Name="SmartTourist.Domain.PointOfInterestStatus" Collapsed="true">
-    <Position X="0.5" Y="3.75" Width="1.5" />
+    <Position X="7.75" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAABAAA=</HashCode>
       <FileName>Enums\PointOfInterestStatus.cs</FileName>
     </TypeIdentifier>
   </Enum>
   <Enum Name="SmartTourist.Domain.SocialApp" Collapsed="true">
-    <Position X="2.25" Y="3.75" Width="1.5" />
+    <Position X="7.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAABAAAAAAAA=</HashCode>
       <FileName>Enums\SocialApp.cs</FileName>

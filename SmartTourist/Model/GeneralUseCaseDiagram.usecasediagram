@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="d3ae6e3e-edbe-4dec-b253-cfdf14ed8b34" name="GeneralUseCaseDiagram" linkedPackageId="4f25fc55-be56-49d9-bf90-a9eddf3ab7c1" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="ccfb43c6-d923-4158-90e0-aee83389f8d8">
+      <profileInstance Id="566dcb81-ba9c-4565-addc-e14d3ecc33c0" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="200e479e-0b99-4a25-b8d9-9b895a83131f">
+      <profileInstance Id="65834706-b35f-430f-a30f-b2fd3589aa51" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="d1115700-4d72-487f-85fb-238f265a5b9c" name="Guest" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a185a2d0-e163-429d-bd8a-35607f8e8dca" />
+        <targetEnds>
+          <association Id="44d5226f-12f9-4b0d-be56-6e20bed9e27d" isDerived="false" sourceEndRoleName="Guest" targetEndRoleName="Login" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="e7648436-89f2-4cf3-a09b-2403aca28fd8" LastKnownName="Login" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ac834d0e-5606-458a-a708-e45a479cd6c6" name="Guest" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="87fa62cb-a036-4bfe-ab65-54ac019a8c9d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4d5681cb-031f-4a93-ac2a-5f0add151372" name="Login" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="cfcaa332-e682-4d9a-a0c1-8d4f5e69d44c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="7ce53276-cf72-48a3-9beb-f5819dab30ce" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="e7648436-89f2-4cf3-a09b-2403aca28fd8" name="Login" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c2a2c0ce-04d2-4853-ba63-f2d4e2ec2bea" />
+        <suppliersInternal>
+          <dependency Id="d0cb60e0-81a6-457a-96bb-6a3fdc450d6b">
+            <useCaseMoniker Id="220627a5-b22e-4788-a87a-9abc6c18d8fa" LastKnownName="Start new trip" />
+            <elementDefinition Id="f0e13cab-f892-4fe9-a033-20d56eacb8f0" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="16e56a84-1bcb-4e3c-beff-f13e343b069f" name="Logged in User" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1d549856-3550-41cf-9bc1-f4a66ffc82c9" />
+        <targetEnds>
+          <association Id="6352fe15-f221-4c8f-8184-a12c358b6997" isDerived="false" sourceEndRoleName="Logged in User" targetEndRoleName="Start new trip" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="220627a5-b22e-4788-a87a-9abc6c18d8fa" LastKnownName="Start new trip" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1cc538d9-0415-4720-8aef-db13c8d90213" name="Logged in User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="e7179704-ba9e-4134-ae98-13cf939e1b89" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="fc1ebdf3-a348-482e-b37f-abac25b08126" name="Start new trip" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="b58accd1-80b6-4129-8f22-217972e9215a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="4b50701f-b4a5-4f07-80c5-92e86023adb8" />
+          </association>
+          <association Id="9b538509-55d2-48e1-ab70-34e3b6fa35d0" isDerived="false" sourceEndRoleName="Logged in User" targetEndRoleName="Continue trip" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="d8e40559-5800-4688-8fd7-37c0f22180bb" LastKnownName="Continue trip" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5076bd85-62c8-44c2-ad16-2c3e6f8d4bbd" name="Logged in User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="c7a9bf96-d8af-46a1-bf47-ae35aac868fc" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f69e899e-0d2a-4942-bc4d-efb64b78542e" name="Continue trip" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="e0d8dea3-7474-4307-ae64-f43efd009d13" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="449ee8f2-9eb6-4edc-9dc2-38a69d86fa34" />
+          </association>
+          <association Id="620a893f-72ec-4b89-9233-095e5150f8e0" isDerived="false" sourceEndRoleName="Logged in User" targetEndRoleName="Logout" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="a9001fec-7ea1-48ba-8013-f7a0c4ef929f" LastKnownName="Logout" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="10fb465e-0f2d-4ddf-9286-999502ae42cc" name="Logged in User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="843644c1-65fd-4809-ad48-0f7013665da5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f1aa0ee6-c16d-4e9f-8a58-cec725361981" name="Logout" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="f0cda80c-7d3f-4f63-a1f5-826eb73ee1cd" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="cccb9c1e-b8de-4870-9778-03793c06e44d" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="220627a5-b22e-4788-a87a-9abc6c18d8fa" name="Start new trip" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="9d614480-f79d-4cd4-ba0e-b01ed4314270" />
+        <additions>
+          <include Id="97945451-a899-47fc-bf4f-fa01eb33ea65">
+            <useCaseMoniker Id="5eeaa7da-a10e-4b66-a78f-a9181a84757a" LastKnownName="Choose trip type" />
+            <elementDefinition Id="20f76657-b2ed-422c-b009-0a713d21c90b" />
+          </include>
+          <include Id="c4b9c57b-cbb5-4904-bf29-29622d491dbd">
+            <useCaseMoniker Id="295d8f61-695f-41c5-83df-ced25915bcc7" LastKnownName="Configure route (choose start point and destination)" />
+            <elementDefinition Id="d422f07a-57c4-472d-8f3f-5365e82644c4" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="d8e40559-5800-4688-8fd7-37c0f22180bb" name="Continue trip" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1d5c9e99-4f85-4ea3-8415-11ff539733c8" />
+        <extendedCases>
+          <extend Id="19b0a99b-4502-4b2a-9bd8-1dbae144c257">
+            <useCaseMoniker Id="683c1f50-46f2-4a2c-89e6-53f743cdf2b4" LastKnownName="Reconfigure route (add or delete points)" />
+            <elementDefinition Id="09eb7059-a051-4cba-a870-362fb5d9c923" />
+          </extend>
+          <extend Id="c0119783-2d3d-453d-8655-050d337563b3">
+            <useCaseMoniker Id="57cc7673-378b-47c9-968d-ce0326f7ee57" LastKnownName="Post to social media" />
+            <elementDefinition Id="a143821f-7cc1-4076-a985-586173e9f441" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="5eeaa7da-a10e-4b66-a78f-a9181a84757a" name="Choose trip type" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="080de33f-e62d-4cb9-bb29-670efbad5497" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="295d8f61-695f-41c5-83df-ced25915bcc7" name="Configure route (choose start point and destination)" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="cb2623d2-6c5e-4923-864d-102fde7a02ce" />
+        <extendedCases>
+          <extend Id="2615e62c-ddea-4764-8030-52854fe5371c">
+            <useCaseMoniker Id="683c1f50-46f2-4a2c-89e6-53f743cdf2b4" LastKnownName="Reconfigure route (add or delete points)" />
+            <elementDefinition Id="8818d773-905f-4a97-b3e6-92aaa5f1ad06" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="683c1f50-46f2-4a2c-89e6-53f743cdf2b4" name="Reconfigure route (add or delete points)" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="392651be-470c-43d1-9764-cbdac5a5e11e" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="a9001fec-7ea1-48ba-8013-f7a0c4ef929f" name="Logout" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1c10aeb4-964b-451d-9dd1-2d5e8606c136" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="57cc7673-378b-47c9-968d-ce0326f7ee57" name="Post to social media" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b83afd69-c02c-473b-8436-4d9e010a0e8d" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="4f25fc55-be56-49d9-bf90-a9eddf3ab7c1" name="Model">
+    <elementDefinition Id="b61377cd-a07d-4eec-b4cc-8f69873688d8" />
+  </package>
+</useCaseModelRoot>
