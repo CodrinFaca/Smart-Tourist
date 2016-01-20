@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartTourist.Domain", "Smar
 EndProject
 Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "Model", "Model\Model.modelproj", "{F297C23A-A227-4D61-AA8A-3B25FD7702D6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartTourist.WebClient", "SmartTourist.WebClient\SmartTourist.WebClient.csproj", "{E0CE1876-50DB-44C9-8D71-C011A4770C06}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{F297C23A-A227-4D61-AA8A-3B25FD7702D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F297C23A-A227-4D61-AA8A-3B25FD7702D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F297C23A-A227-4D61-AA8A-3B25FD7702D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0CE1876-50DB-44C9-8D71-C011A4770C06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0CE1876-50DB-44C9-8D71-C011A4770C06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0CE1876-50DB-44C9-8D71-C011A4770C06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0CE1876-50DB-44C9-8D71-C011A4770C06}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

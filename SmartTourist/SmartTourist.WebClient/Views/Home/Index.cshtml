@@ -1,0 +1,35 @@
+﻿@using Jmelosegui.Mvc.GoogleMap
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<h2>
+    @ViewBag.Title
+</h2>
+<p>
+    A Google Map:
+</p>
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false">
+    function InitializeMap() {
+        var latlng = new google.maps.LatLng(-34.397, 150.644);
+        var myOptions = {
+            zoom: 8,
+            center: latlng,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        var map = new google.maps.Map(document.getElementById("map"), myOptions);
+    }
+    window.onload = InitializeMap;
+</script>
+<div>
+    @(
+        Html.GoogleMap()
+            .Name("map")
+            .Height(500)
+            .Markers(m => m.Add().Title("Hello World!"))
+    )
+</div>
+@section scripts
+    {
+    @(Html.GoogleMap().ScriptRegistrar())
+}

@@ -1,0 +1,5 @@
+T:\Smart-Tourist\SmartTourist\SmartTourist.Domain\bin\Debug\SmartTourist.Domain.dll
+T:\Smart-Tourist\SmartTourist\SmartTourist.Domain\bin\Debug\SmartTourist.Domain.pdb
+T:\Smart-Tourist\SmartTourist\SmartTourist.Domain\obj\Debug\SmartTourist.Domain.csprojResolveAssemblyReference.cache
+T:\Smart-Tourist\SmartTourist\SmartTourist.Domain\obj\Debug\SmartTourist.Domain.dll
+T:\Smart-Tourist\SmartTourist\SmartTourist.Domain\obj\Debug\SmartTourist.Domain.pdb
